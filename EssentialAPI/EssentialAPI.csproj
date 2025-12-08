@@ -11,7 +11,6 @@
         <RootNamespace>EssentialAPI</RootNamespace>
         <AssemblyName>EssentialAPI</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <FileAlignment>512</FileAlignment>
         <LangVersion>latest</LangVersion>
     </PropertyGroup>
@@ -472,6 +471,8 @@
         <Compile Include="API\Players\Inventory\ItemUtility.cs" />
         <Compile Include="API\Players\Teleport\TeleportUtility.cs" />
         <Compile Include="Config.cs" />
+        <Compile Include="ExamplePlugin\Config.cs" />
+        <Compile Include="ExamplePlugin\Plugin.cs" />
         <Compile Include="Plugin.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
@@ -481,6 +482,7 @@
     </ItemGroup>
     <ItemGroup>
       <Content Include="bin\Debug\EssentialAPI.dll" />
+      <Content Include="bin\Release\EssentialAPI.dll" />
       <Content Include="README.md" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
