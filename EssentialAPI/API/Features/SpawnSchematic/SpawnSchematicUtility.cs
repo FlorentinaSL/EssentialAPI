@@ -6,7 +6,7 @@ namespace EssentialAPI.API.SpawnSchematic
     public static class SpawnSchematicUtility
     {
         /// <summary>
-        /// It uses Project MER to load the schematic.
+        /// It uses Project MER to load the schematic. with Vector3 and the path.
         /// </summary>
         public static void LoadSchematic(string path, float x, float y, float z)
         {
